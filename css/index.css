@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: grey;
+    font-family: sans-serif;
+}
+
+.logoContainer{
+    width: 2px;
+}
+
+.header{
+    background-color: black;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header ul{
+    display: inline-flex;
+    list-style:none;
+    color: #fff;
+}
+
+.header ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.header ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.header .fas {
+    margin-right: 8px;
+}
+
+.active, .header ul li:hover{
+    background-color: #616161;
+    border-radius: 3px;
+}
+
+.subMenu{
+    display: none;
+
+}
+
+.header ul li:hover .subMenu{
+    display: block;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -15px;
+    background-color: black;
+}
+
+.header ul li:hover .subMenu ul{
+    display: block;
+    margin: 10px;
+}
+
+.header ul li:hover .subMenu ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px double #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.header ul li:hover .subMenu ul li:last-child{
+    border-bottom:none;
+}
+
+
+.header ul li:hover .subMenu ul li a:hover{
+    color: #bdbdbd;
+}
